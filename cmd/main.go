@@ -8,4 +8,5 @@ import (
 func main()  {
 	resultado := soma.Soma(10, 5)
 	fmt.Printf("10 + 5 = %d\n", resultado)
+	// Testando pipeline com ngrok
 }
