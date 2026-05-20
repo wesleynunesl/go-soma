@@ -27,3 +27,11 @@ jobs:
         with:
           push: false
           tags: soma-simples:latest
+      - name: SonarQube Scan
+        run: |
+          docker run --rm -v $(pwd):/root/src \
+            sonarsource/sonar-scanner-cli \
+            -Dsonar.projectKey=soma-simples \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.token=${{ secrets.SONARCLOUD_TOKEN }}
