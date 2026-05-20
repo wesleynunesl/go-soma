@@ -22,3 +22,6 @@ vendor/
 # Docker
 .docker/
 *.log
+
+# SonarQube
+.sonarlint/
