@@ -1,10 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"soma-simples/pkg/soma"
+)
 
 func main()  {
-	a := 10
-	b := 6
-	resultado := a + b
-	fmt.Printf("%d + %d = %d\n", a, b, resultado + 1)
+	resultado := soma.Soma(10, 5)
+	fmt.Printf("10 + 5 = %d\n", resultado)
 }
