@@ -34,5 +34,4 @@ jobs:
             -Dsonar.projectKey=soma-simples \
             -Dsonar.sources=. \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
-            -Dsonar.token=${{ secrets.SONARCLOUD_TOKEN }} \
-            -Dsonar.branch.name=${{ github.ref_name }}
+            -Dsonar.token=${{ secrets.SONARCLOUD_TOKEN }}
